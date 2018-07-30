@@ -1,0 +1,9 @@
+python
+>>> from textblob import TextBlob
+>>> wiki=TextBlob("sid is happy that he always gets good matches on tinder")
+>>> wiki.tags
+[('sid', 'NN'), ('is', 'VBZ'), ('happy', 'JJ'), ('that', 'IN'), ('he', 'PRP'), ('always', 'RB'), ('gets', 'VBZ'), ('good', 'JJ'), ('matches', 'NNS'), ('on', 'IN'), ('tinder', 'NN')]
+>>> wiki.words
+WordList(['sid', 'is', 'happy', 'that', 'he', 'always', 'gets', 'good', 'matches', 'on', 'tinder'])
+>>> wiki.sentiment.polarity
+0.75
